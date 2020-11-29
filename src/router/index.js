@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// import { component } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,9 @@ const profile = () =>
   import('views/profile/profile.vue')
 const category = () =>
   import('views/category/category.vue')
+const detail = () => 
+  import('views/details/detail.vue')
+
 
 const routes = [
   {
@@ -35,6 +39,10 @@ const routes = [
     path: '/profile',
     component: profile
   },
+  {
+    path: '/detail/:iid',
+    component: detail
+  }
 ]
 
 
@@ -46,8 +54,8 @@ const router = new VueRouter({
 
 
 const originalPush = VueRouter.prototype.push
-   VueRouter.prototype.push = function push(location) {
-   return originalPush.call(this, location).catch(err => err)
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
 }
 
 export default router

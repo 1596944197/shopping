@@ -1,6 +1,8 @@
 <template>
   <div class="bar">
+    <!-- bar组件 -->
     <bar>
+      <!-- baritem组件 -->
       <baritem path="/home" activeColor="red">
         <img src="~assets/images/home.svg" alt="" slot="item-icon" />
         <img src="~assets/images/home_active.svg" alt="" slot="item-active" />
@@ -36,6 +38,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-</style>

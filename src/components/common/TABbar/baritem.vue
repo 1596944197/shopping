@@ -10,7 +10,9 @@
 <script>
 export default {
   props:{
+    // 引入路由地址
     path:String,
+    // 用于设置每一个item的颜色
     activeColor:{
       // 这里接收父组件传来的数据
       type:String,
@@ -33,6 +35,7 @@ export default {
     }
   },
   methods:{
+    // 改变路由的地址
     monitor(){
       this.$router.replace(this.path)
     }
