@@ -31,6 +31,7 @@ export default {
   methods: {
     changeIndex(index) {
       this.currentIndex = index;
+      this.$emit('changeTop',index)
     },
     backTo() {
       // this.$router.go(-1);

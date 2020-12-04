@@ -1,6 +1,13 @@
 <template>
   <li class="item" @click="details">
-    <img :src="item.show.img" alt="" @load="imgChange" />
+    <!--  
+          goodsItem.show && goodsItem.show.img -对应首页图片
+          goodsItem.image 对应详情页推荐图片
+        -->
+    <img
+      :src="(item.show && item.show.img) || item.image"
+      @load="imgChange"
+    />
     <div class="info">
       <p v-text="item.title" class="title"></p>
       <span v-text="item.price"></span>
@@ -21,6 +28,7 @@ export default {
   },
   methods: {
     // 发出一个事件，在main里通过原型链接收
+    // 202省略了一章节
     imgChange() {
       this.$bus.$emit("imgChange");
     },

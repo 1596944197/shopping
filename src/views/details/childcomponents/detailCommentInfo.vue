@@ -30,6 +30,8 @@
 
 <script>
 // import { formatDate } from "common/utils";
+import {formatTime} from 'common/utils'
+
 
 export default {
   name: "DetailCommentInfo",
@@ -43,8 +45,8 @@ export default {
   },
   filters: {
     showDate: function (value) {
-      // let date = new Date(value * 1000);
-      // return formatDate(date, "yyyy-MM-dd");
+      let date = new Date(value * 1000);
+      return formatTime(date);
     },
   },
 };

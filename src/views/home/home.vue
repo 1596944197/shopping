@@ -4,7 +4,7 @@
     <Scroll
       class="content"
       ref="scroll"
-      :probeType="3"
+      :probeType="2"
       @scroll="contentRun"
       :pullUpLoad="true"
       @loadMore="loadMore"
@@ -70,6 +70,7 @@ export default {
         sell: { page: 0, list: [] },
       },
       currentGood: "pop",
+      // 回到顶部
       signal: false,
       // 用来保存control组件的top值
       offsetTop: null,
