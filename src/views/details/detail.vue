@@ -16,8 +16,8 @@
       ></DetailCommentInfo>
       <GoodsList :goods="recommends" ref="recommend" />
     </Scroll>
-    <DetailBottomBar></DetailBottomBar>
-    <BackTop  @click.native="backtop" v-show="signal"/>
+    <DetailBottomBar @addToCart="addCart"></DetailBottomBar>
+    <BackTop @click.native="backtop" v-show="signal" />
   </div>
 </template>
 
@@ -131,7 +131,6 @@ export default {
       this.titlePlaceY.push(this.$refs.recommend.$el.offsetTop);
       // hack做法必备条件
       this.titlePlaceY.push(Number.MAX_VALUE);
-      console.log(this.titlePlaceY);
     },
     changeTop(index) {
       this.$refs.scroll.scrollTo(0, -this.titlePlaceY[index]);
@@ -154,7 +153,20 @@ export default {
     },
     backtop() {
       // 使用ref获取scroll组件里面的scroll属性里面的scrollTo方法
-      this.$refs.scroll.scrollTo()
+      this.$refs.scroll.scrollTo();
+    },
+    // 购物车方法
+    addCart() {
+      // 获取购物车展示的信息
+      const product = {};
+      product.image = this.topImages[0];
+      product.title = this.Goods.title;
+      product.desc = this.Goods.desc;
+      product.price = this.Goods.realPrice;
+      product.iid = this.iid;
+
+      // 将商品添加到购物车
+      this.$store.dispatch('addCart',product)
     },
   },
 };
