@@ -16,7 +16,7 @@
       ></DetailCommentInfo>
       <GoodsList :goods="recommends" ref="recommend" />
     </Scroll>
-    <DetailBottomBar @addToCart="addCart"></DetailBottomBar>
+    <DetailBottomBar @addToCart="addToCart"></DetailBottomBar>
     <BackTop @click.native="backtop" v-show="signal" />
   </div>
 </template>
@@ -43,6 +43,9 @@ import Scroll from "components/common/scroll/scroll";
 
 import GoodsList from "components/content/goods/List";
 import BackTop from "components/content/backTop/backTop";
+// import Toast from "components/common/toast/toast";
+
+import { mapActions } from "vuex";
 
 export default {
   // 用于keep-alive的排除
@@ -59,6 +62,7 @@ export default {
     Scroll,
     GoodsList,
     BackTop,
+    // Toast,
   },
   data() {
     return {
@@ -79,6 +83,9 @@ export default {
       // 205集因为没出现所以省略了
       // 用于判断backtop组件是否
       signal: false,
+      // toast需要的数据
+      message: "",
+      showToast: false,
     };
   },
   created() {
@@ -121,6 +128,7 @@ export default {
     });
   },
   methods: {
+    ...mapActions(["addCart"]),
     imageLoad() {
       this.$refs.scroll.refresh();
       // 将四个值push进去
@@ -156,7 +164,7 @@ export default {
       this.$refs.scroll.scrollTo();
     },
     // 购物车方法
-    addCart() {
+    addToCart() {
       // 获取购物车展示的信息
       const product = {};
       product.image = this.topImages[0];
@@ -166,7 +174,19 @@ export default {
       product.iid = this.iid;
 
       // 将商品添加到购物车
-      this.$store.dispatch('addCart',product)
+      // this.$store.dispatch("addCart", product).then((res) => console.log(res));
+
+      // 利用map映射将方法挪过来,成为自己本身的方法
+      this.addCart(product).then((res) => {
+        // this.message = res;
+        // this.showToast = true;
+        // let time = setTimeout(() => {
+        //   clearTimeout(time)
+        //   this.showToast = false;
+        // }, 2000);
+        
+        this.$toast.show(res)
+      });
     },
   },
 };

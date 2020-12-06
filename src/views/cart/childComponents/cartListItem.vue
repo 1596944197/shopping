@@ -109,11 +109,11 @@ export default {
   position: absolute;
   right: 5vh;
 }
-.item-control button  {
+.item-control button {
   width: 20px;
   border-radius: 50%;
   outline: none;
   border: none;
   margin-left: 3px;
-};
+}
 </style>
