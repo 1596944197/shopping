@@ -36,7 +36,7 @@ export default {
     },
     moveRatio: {
       type: Number,
-      default: 0.55,
+      default: 0.2,
     },
     showIndicator: {
       type: Boolean,

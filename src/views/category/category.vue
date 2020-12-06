@@ -1,230 +1,95 @@
 <template>
-  <div class="wrapper">
-    <Scroll :probeType='0'>
-      <div class="content">
-        <h1>category</h1>
-        <h1>1</h1>
-        <h1>2</h1>
-        <h1>3</h1>
-        <h1>4</h1>
-        <h1>5</h1>
-        <h1>6</h1>
-        <h1>7</h1>
-        <h1>8</h1>
-        <h1>9</h1>
-        <h1>10</h1>
-        <h1>11</h1>
-        <h1>12</h1>
-        <h1>13</h1>
-        <h1>14</h1>
-        <h1>15</h1>
-        <h1>16</h1>
-        <h1>17</h1>
-        <h1>18</h1>
-        <h1>19</h1>
-        <h1>20</h1>
-        <h1>21</h1>
-        <h1>22</h1>
-        <h1>23</h1>
-        <h1>24</h1>
-        <h1>25</h1>
-        <h1>26</h1>
-        <h1>27</h1>
-        <h1>28</h1>
-        <h1>29</h1>
-        <h1>30</h1>
-        <h1>31</h1>
-        <h1>32</h1>
-        <h1>33</h1>
-        <h1>34</h1>
-        <h1>35</h1>
-        <h1>36</h1>
-        <h1>37</h1>
-        <h1>38</h1>
-        <h1>39</h1>
-        <h1>40</h1>
-        <h1>41</h1>
-        <h1>42</h1>
-        <h1>43</h1>
-        <h1>44</h1>
-        <h1>45</h1>
-        <h1>46</h1>
-        <h1>47</h1>
-        <h1>48</h1>
-        <h1>49</h1>
-        <h1>50</h1>
-        <h1>51</h1>
-        <h1>52</h1>
-        <h1>53</h1>
-        <h1>54</h1>
-        <h1>55</h1>
-        <h1>56</h1>
-        <h1>57</h1>
-        <h1>58</h1>
-        <h1>59</h1>
-        <h1>60</h1>
-        <h1>61</h1>
-        <h1>62</h1>
-        <h1>63</h1>
-        <h1>64</h1>
-        <h1>65</h1>
-        <h1>66</h1>
-        <h1>67</h1>
-        <h1>68</h1>
-        <h1>69</h1>
-        <h1>70</h1>
-        <h1>71</h1>
-        <h1>72</h1>
-        <h1>73</h1>
-        <h1>74</h1>
-        <h1>75</h1>
-        <h1>76</h1>
-        <h1>77</h1>
-        <h1>78</h1>
-        <h1>79</h1>
-        <h1>80</h1>
-        <h1>81</h1>
-        <h1>82</h1>
-        <h1>83</h1>
-        <h1>84</h1>
-        <h1>85</h1>
-        <h1>86</h1>
-        <h1>87</h1>
-        <h1>88</h1>
-        <h1>89</h1>
-        <h1>90</h1>
-        <h1>91</h1>
-        <h1>92</h1>
-        <h1>93</h1>
-        <h1>94</h1>
-        <h1>95</h1>
-        <h1>96</h1>
-        <h1>97</h1>
-        <h1>98</h1>
-        <h1>99</h1>
-        <h1>100</h1>
-        <h1>1*10</h1>
-        <h1>2*10</h1>
-        <h1>3*10</h1>
-        <h1>4*10</h1>
-        <h1>5*10</h1>
-        <h1>6*10</h1>
-        <h1>7*10</h1>
-        <h1>8*10</h1>
-        <h1>9*10</h1>
-        <h1>10*10</h1>
-        <h1>11*10</h1>
-        <h1>12*10</h1>
-        <h1>13*10</h1>
-        <h1>14*10</h1>
-        <h1>15*10</h1>
-        <h1>16*10</h1>
-        <h1>17*10</h1>
-        <h1>18*10</h1>
-        <h1>19*10</h1>
-        <h1>20*10</h1>
-        <h1>21*10</h1>
-        <h1>22*10</h1>
-        <h1>23*10</h1>
-        <h1>24*10</h1>
-        <h1>25*10</h1>
-        <h1>26*10</h1>
-        <h1>27*10</h1>
-        <h1>28*10</h1>
-        <h1>29*10</h1>
-        <h1>30*10</h1>
-        <h1>31*10</h1>
-        <h1>32*10</h1>
-        <h1>33*10</h1>
-        <h1>34*10</h1>
-        <h1>35*10</h1>
-        <h1>36*10</h1>
-        <h1>37*10</h1>
-        <h1>38*10</h1>
-        <h1>39*10</h1>
-        <h1>40*10</h1>
-        <h1>41*10</h1>
-        <h1>42*10</h1>
-        <h1>43*10</h1>
-        <h1>44*10</h1>
-        <h1>45*10</h1>
-        <h1>46*10</h1>
-        <h1>47*10</h1>
-        <h1>48*10</h1>
-        <h1>49*10</h1>
-        <h1>50*10</h1>
-        <h1>51*10</h1>
-        <h1>52*10</h1>
-        <h1>53*10</h1>
-        <h1>54*10</h1>
-        <h1>55*10</h1>
-        <h1>56*10</h1>
-        <h1>57*10</h1>
-        <h1>58*10</h1>
-        <h1>59*10</h1>
-        <h1>60*10</h1>
-        <h1>61*10</h1>
-        <h1>62*10</h1>
-        <h1>63*10</h1>
-        <h1>64*10</h1>
-        <h1>65*10</h1>
-        <h1>66*10</h1>
-        <h1>67*10</h1>
-        <h1>68*10</h1>
-        <h1>69*10</h1>
-        <h1>70*10</h1>
-        <h1>71*10</h1>
-        <h1>72*10</h1>
-        <h1>73*10</h1>
-        <h1>74*10</h1>
-        <h1>75*10</h1>
-        <h1>76*10</h1>
-        <h1>77*10</h1>
-        <h1>78*10</h1>
-        <h1>79*10</h1>
-        <h1>80*10</h1>
-        <h1>81*10</h1>
-        <h1>82*10</h1>
-        <h1>83*10</h1>
-        <h1>84*10</h1>
-        <h1>85*10</h1>
-        <h1>86*10</h1>
-        <h1>87*10</h1>
-        <h1>88*10</h1>
-        <h1>89*10</h1>
-        <h1>90*10</h1>
-        <h1>91*10</h1>
-        <h1>92*10</h1>
-        <h1>93*10</h1>
-        <h1>94*10</h1>
-        <h1>95*10</h1>
-        <h1>96*10</h1>
-        <h1>97*10</h1>
-        <h1>98*10</h1>
-        <h1>99*10</h1>
-        <h1>100*10</h1>
+  <div id="category">
+    <nav-bar class="category-bar">
+      <div slot="center">商品分类</div>
+    </nav-bar>
+    <div class="category-content">
+      <div class="category-side-bar">
+        <CategorySideBar
+          :categoryList="categoryList"
+          @handleCategoryClick="handleCategoryClick"
+        />
       </div>
-    </Scroll>
+      <scroll class="category-side-content" ref="scroll">
+        <CategorySideContent :subCategoryList="subCategoryList" />
+      </scroll>
+    </div>
   </div>
 </template>
 
 <script>
-// 安装better-scroll插件
-// 引入插件
+import NavBar from "components/common/NAVbar/bar";
 import Scroll from "components/common/scroll/scroll";
+import { getAllCategory, getSubCategory } from "network/category";
 
+import CategorySideBar from "./childComponents/categorySideBar";
+import CategorySideContent from "./childComponents/categorySideContent";
 export default {
+  name: "Category",
+  data() {
+    return {
+      categoryList: [],
+      subCategoryMaitKey: "",
+      subCategoryList: [],
+    };
+  },
   components: {
+    NavBar,
+    CategorySideBar,
+    CategorySideContent,
     Scroll,
+  },
+  created() {
+    getAllCategory()
+      .then((res) => {
+        this.categoryList = res.data.category.list;
+        this.subCategoryMaitKey = res.data.category.list[0].maitKey;
+        return this.subCategoryMaitKey;
+      })
+      .then((key) => {
+        this.getSubCategory(key);
+      });
+  },
+  methods: {
+    handleCategoryClick(maitKey) {
+      this.getSubCategory(maitKey);
+    },
+    getSubCategory(key) {
+      getSubCategory(key).then((res) => {
+        this.subCategoryList = res.data.list;
+        this.$refs.scroll.scrollTo(0, 0, 500);
+      });
+    },
   },
 };
 </script>
-
 <style scoped>
-.wrapper {
-  width: 100%;
-  height: 50ch;
-  border-bottom: 1px solid;
-  overflow-y: scroll;
+#category {
+  height: 100vh;
+  position: relative;
+}
+.category-bar {
+  background: var(--color-tint);
+  color: #fff;
+  z-index: 9;
+}
+.category-side-bar {
+  width: 100px;
+  position: fixed;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 49px;
+  /* height: calc(100% - 44px - 49px); */
+  /* overflow: hidden; */
+}
+.category-side-content {
+  position: absolute;
+  left: 100px;
+  right: 0;
+  top: 44px;
+  bottom: 49px;
+  width: calc(100% - 100px);
+  overflow: hidden;
 }
 </style>
